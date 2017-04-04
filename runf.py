@@ -1,1 +1,2 @@
-from iqopt.app import app
+from iqopt.app import create_app
+app = create_app()

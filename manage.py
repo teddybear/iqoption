@@ -4,5 +4,6 @@
 
 
 if __name__ == "__main__":
-    from iqopt.app import app
+    from iqopt.app import create_app
+    app = create_app()
     app.run()

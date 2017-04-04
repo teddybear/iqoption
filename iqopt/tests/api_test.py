@@ -28,16 +28,18 @@ def test_smth():
 
 def test_translate(client):
     print dir(client)
-    assert client.post(
+    resp = client.post(
         "/translate",
         data=json.dumps({"text": u"Текст", "lang": "en-ru"}),
         content_type="application/json"
-    ).status_code == 200
+    )
+    assert resp.status_code == 200
 
 
 def test_stats(client):
-    assert client.post(
+    resp = client.post(
         "/translate/stats",
         data=json.dumps({"text": u"Текст", "lang": "en-ru"}),
         content_type="application/json"
-    ).status_code == 200
+    )
+    assert resp.status_code == 200
