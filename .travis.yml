@@ -1,0 +1,10 @@
+language: python
+python:
+  - '2.7'
+install: pip install -r requirements.txt
+script: pytest
+deploy:
+  provider: heroku
+  api_key:
+    secure: gIbz80rS50x0cmDrkNnzFsNPZlR/Pew+xWgRCfEejFk10N8c+1AhI+O9qWsKzhVv9bJY2/vdmByuXIROi0ykfZbB2X02J1Yc3G6AuECWz7yHtS3LGjlxK+mSzoOr5IIeg5c8IpPEdP2fLZdbESBhuhwdSMRjFFT1bnFycg3k1AZNdbb9wwuGqim4+OJuuCDgN6YXRK/ulMuc1GOidH/reP1UeNnfu7TCnIfA07f2wY8eI4KqR/JAYncCfcYzwjC8cElhwkghpW+Di4D9rWDRmwXKyvngIN6LZJQxda8pLZn8uMmL+Rx/z8/J2/zU3InhKIgxczkGeCUiTr/fXcn/uBhgaBgbSYaalUsrR1Bbw1JyVOpM33U62sgyeHmKoC3SZ1+emHpHIr4E/aTZ17U1Nu7I6EhesDZ+JIh3px2GgGxbIw2hQhXVEQq8V/1tNd+Q7Qhd/R3oM54EJB4O+2rdj0DvIiCLMA35U9tn5mNg8huuNbQBHbYR+CDwFRW4uhv79joMDC+gzE66TV/m/Vy2D7+BORNcBz19Ip3PaqPuIpLxVD3pe8lRM1V1vFtWmjf/QmT1z1Pg+6Z/JMOE4Zv8aIaHstWN2I8PiCcpfODN+ykehGNqoDMgmmG3WZg2Z3GomdAoZpx6yOmdXz0F9i6QPdAsDe6dLz8uG6jS+pvo7EE=
+  app: evening-stream-58031
