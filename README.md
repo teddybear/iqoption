@@ -17,7 +17,8 @@ Answer:
 ```
 
 Stats:
-```curl -H "Content-Type: application/json" -X POST -d '{"text":"Hello","lang":"en-ru"}'  https://evening-stream-58031.herokuapp.com/translate/stats
+```
+curl -H "Content-Type: application/json" -X POST -d '{"text":"Hello","lang":"en-ru"}'  https://evening-stream-58031.herokuapp.com/translate/stats
 ```
 Answer:
 ```
