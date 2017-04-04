@@ -27,9 +27,7 @@ v_api = Validator(
     }
 )
 
-YT_API_KEY = "trnsl.1.1.20170330T092335Z.c546d05587db2f13"\
-             ".e179dc0e03072bf28a4f316100970f1ebeaa0fa5"
-
+YT_API_KEY = "API_KEY"
 YT_API_URL = "https://translate.yandex.net/api/v1.5/tr.json"
 
 
